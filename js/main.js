@@ -1,4 +1,4 @@
-var imagesArray = ["background-image:url('img/redtop2.jpg');background-position: 50% 0%;-moz-background-position: center top;", "background-image:url('img/pink.jpg')","background-image:url('img/white.jpg')"];
+var imagesArray = ["background-image:url('img/redtop2.jpg');background-position: 50% 0%;-moz-background-position: center top;","background-image:url('img/pink.jpg'); background-position: 50% 70%;-moz-background-position: center bottom","background-image:url('img/white.jpg')"];
 //(these don't require the "../" because we'll be injecting these paths into HTML, not CSS)
 
 var counterVar = 0;

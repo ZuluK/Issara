@@ -3,6 +3,7 @@ html,
 body {
   height: 100%;
   background-color: #000;
+  overflow: hidden;
 }
 
 body.imgEff {
@@ -10,7 +11,7 @@ margin:0;
 padding:0;
 color: #fff;
 background: url(../img/white.jpg) right bottom no-repeat;
-transition: all 5s ease-in-out;
+transition: all 4s ease-in-out;
 -moz-background-position: center top;
 -webkit-background-size: cover;
 -moz-background-size: cover;
@@ -59,6 +60,28 @@ h2{
   display: inline-block;
   margin-left: 12%;
 }
+/*.move{
+  animation: shift 21s ease;
+  animation-iteration-count:infinite;
+}
+#footerTxt .move {
+  animation: shift2 21s ease;
+  animation-iteration-count:infinite;
+}*/
+/*@keyframes shift {
+  36.3% {transform: translateX(0);}
+  54.6% {transform: translateX(55vw);}
+  70% {transform: translateX(55vw); color: #FFF;}
+  82.5% {transform: translateX(25vw) translateY(-5vh); color: #222222}
+  92% {transform: translateX(25vw) translateY(-5vh); color: #222222}
+}
+@keyframes shift2 {
+  36.3% {transform: translateX(0);}
+  54.6% {transform: translateX(55vw);}
+  70% {transform: translateX(55vw); color: #FFF;}
+  82.5% {transform: translateX(22vw) translateY(15vh); color: #222222}
+  92% {transform: translateX(22vw) translateY(15vh); color: #222222}
+}*/
 
 p {
   margin-left: 14%;
@@ -78,7 +101,7 @@ p {
 div.comingSoon {
   margin-top: 54px;
 }
-/*-- custom fonts --*/
+/*-- custom fonts --
 @font-face {
 	font-family: 'kenzo';
 	src: url('fonts/Kenzo-Regular.otf');
@@ -97,3 +120,14 @@ div.comingSoon {
 	font-style: normal;
 	font-weight: 100;
 }
+/*-- media query --*/
+@media only screen and (max-width:855px){
+  #footer {
+    padding-left: 51px;
+  }
+}
+/*@media only screen and (max-width:855px){
+  p {
+    color: darkred;
+  }
+}*/
